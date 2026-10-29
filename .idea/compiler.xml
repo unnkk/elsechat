@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.48/6858f13541bab505384f07053c5a7b539bbfd3e3/lombok-1.18.48.jar" />
+        </processorPath>
+        <module name="elsechat.post-service.main" />
+        <module name="elsechat.auth-service.main" />
+        <module name="elsechat.gateway-service.main" />
+        <module name="elsechat.user-service.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="21">
+      <module name="social-network.auth-service" target="21" />
+      <module name="social-network.auth-service.main" target="21" />
+      <module name="social-network.auth-service.test" target="21" />
+      <module name="social-network.gateway-service" target="21" />
+      <module name="social-network.gateway-service.main" target="21" />
+      <module name="social-network.gateway-service.test" target="21" />
+      <module name="social-network.post-service" target="21" />
+      <module name="social-network.post-service.main" target="21" />
+      <module name="social-network.post-service.test" target="21" />
+      <module name="social-network.user-service" target="21" />
+      <module name="social-network.user-service.main" target="21" />
+      <module name="social-network.user-service.test" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="elsechat.auth-service" options="-parameters" />
+      <module name="elsechat.auth-service.main" options="-parameters" />
+      <module name="elsechat.auth-service.test" options="-parameters" />
+      <module name="elsechat.gateway-service" options="-parameters" />
+      <module name="elsechat.gateway-service.main" options="-parameters" />
+      <module name="elsechat.gateway-service.test" options="-parameters" />
+      <module name="elsechat.post-service" options="-parameters" />
+      <module name="elsechat.post-service.main" options="-parameters" />
+      <module name="elsechat.post-service.test" options="-parameters" />
+      <module name="elsechat.user-service" options="-parameters" />
+      <module name="elsechat.user-service.main" options="-parameters" />
+      <module name="elsechat.user-service.test" options="-parameters" />
+    </option>
+  </component>
+</project>

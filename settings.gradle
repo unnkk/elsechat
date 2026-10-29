@@ -1,0 +1,6 @@
+rootProject.name = 'elsechat'
+
+include 'auth-service'
+include 'user-service'
+include 'post-service'
+include 'gateway-service'
