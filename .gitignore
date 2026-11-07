@@ -1,1 +1,7 @@
 
+/auth-service/build/
+/build/
+/.gradle/
+/gateway-service/build/
+/post-service/build/
+/user-service/build/

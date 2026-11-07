@@ -5,12 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59d64d20-3954-4de8-bb11-a195cf5d88ab" name="Changes" comment="Added properties for services + gradle misc">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/auth-service/elsechat.auth-service.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/unnkk/elsechat/auth_service/controllers/HealthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.3.0/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.0/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.3.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.0/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.3.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.0/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.3.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.0/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.3.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.0/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.3.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +68,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -82,61 +97,61 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0027813480382761" />
-      <entry key="MS500" value="1.3091582913618607" />
-      <entry key="S2" value="2.080627406016582" />
-      <entry key="S5" value="3.855340490013111" />
-      <entry key="S10" value="5.99151818019707" />
-      <entry key="S30" value="8.972202206787571" />
-      <entry key="S60" value="10.647464137645152" />
-      <entry key="M2" value="12.870712251062649" />
-      <entry key="M5" value="18.558139173330932" />
-      <entry key="M10" value="25.494269754254578" />
-      <entry key="M15" value="30.20043099718931" />
-      <entry key="M30" value="38.30127822792471" />
-      <entry key="H1" value="45.310620894418015" />
-      <entry key="H2" value="50.33091863664343" />
-      <entry key="H4" value="53.41673422343874" />
-      <entry key="D1" value="56.36379934619204" />
-      <entry key="W1" value="56.908094753862855" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0003330245655226" />
+      <entry key="S2" value="1.2485285230760694" />
+      <entry key="S5" value="2.0662977639576754" />
+      <entry key="S10" value="2.7752571838037103" />
+      <entry key="S30" value="3.5258372938059077" />
+      <entry key="S60" value="4.2198532418959065" />
+      <entry key="M2" value="7.220333653319555" />
+      <entry key="M5" value="17.278404048399533" />
+      <entry key="M10" value="30.19401404582365" />
+      <entry key="M15" value="39.9317380418974" />
+      <entry key="M30" value="58.23246866517459" />
+      <entry key="H1" value="74.77741072288073" />
+      <entry key="H2" value="86.80688452570728" />
+      <entry key="H4" value="94.26726303979325" />
+      <entry key="D1" value="101.44371540799044" />
+      <entry key="W1" value="102.77501961407705" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="0.0" />
-      <entry key="S60" value="0.0" />
-      <entry key="M2" value="0.0" />
-      <entry key="M5" value="0.0" />
-      <entry key="M10" value="0.0" />
-      <entry key="M15" value="0.0" />
-      <entry key="M30" value="0.0" />
-      <entry key="H1" value="0.0" />
-      <entry key="H2" value="0.0" />
-      <entry key="H4" value="0.0" />
-      <entry key="D1" value="0.0" />
-      <entry key="W1" value="0.0" />
+      <entry key="MS100" value="5.887733533646291E-4" />
+      <entry key="MS500" value="0.22593818168777147" />
+      <entry key="S2" value="0.6894414773505937" />
+      <entry key="S5" value="0.8618640525285161" />
+      <entry key="S10" value="0.9372113426800001" />
+      <entry key="S30" value="1.1897705612331695" />
+      <entry key="S60" value="1.6896973657273469" />
+      <entry key="M2" value="3.2876605667996404" />
+      <entry key="M5" value="7.878956779344228" />
+      <entry key="M10" value="12.428218297116796" />
+      <entry key="M15" value="14.934431765900799" />
+      <entry key="M30" value="18.316153185317564" />
+      <entry key="H1" value="20.460242862835038" />
+      <entry key="H2" value="21.675319953505024" />
+      <entry key="H4" value="22.323219531130615" />
+      <entry key="D1" value="22.885131114141124" />
+      <entry key="W1" value="22.983538519135386" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.2819531000978714" />
-      <entry key="MS500" value="1.0806056526493444" />
-      <entry key="S2" value="2.01574787797377" />
-      <entry key="S5" value="3.826134815844562" />
-      <entry key="S10" value="5.9748643189275406" />
-      <entry key="S30" value="8.965619643962954" />
-      <entry key="S60" value="10.643845496177628" />
-      <entry key="M2" value="12.868686598328303" />
-      <entry key="M5" value="18.557090125053577" />
-      <entry key="M10" value="25.49356921140972" />
-      <entry key="M15" value="30.199877568377648" />
-      <entry key="M30" value="38.300922674808135" />
-      <entry key="H1" value="45.31040697162678" />
-      <entry key="H2" value="50.33079826749489" />
-      <entry key="H4" value="53.416669842179445" />
-      <entry key="D1" value="56.36378794044179" />
-      <entry key="W1" value="56.90809310654256" />
+      <entry key="MS100" value="0.14064026396867593" />
+      <entry key="MS500" value="0.7712751061822002" />
+      <entry key="S2" value="1.6715841332908439" />
+      <entry key="S5" value="2.730458533935812" />
+      <entry key="S10" value="3.573057865953459" />
+      <entry key="S30" value="4.648542038609619" />
+      <entry key="S60" value="5.860993514555298" />
+      <entry key="M2" value="10.454606116217924" />
+      <entry key="M5" value="25.10120599567505" />
+      <entry key="M10" value="42.57620876260114" />
+      <entry key="M15" value="54.828475188525296" />
+      <entry key="M30" value="76.52475886972638" />
+      <entry key="H1" value="95.22403851034063" />
+      <entry key="H2" value="108.47490153040991" />
+      <entry key="H4" value="116.58669596669041" />
+      <entry key="D1" value="124.32819557646513" />
+      <entry key="W1" value="125.75846463998957" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -159,6 +174,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "indev",
     "kotlin-language-version-configured": "true",
@@ -256,7 +272,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793717847758</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added properties for services + gradle misc">
+      <option name="closed" value="true" />
+      <created>1793982767483</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1793982767484</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
