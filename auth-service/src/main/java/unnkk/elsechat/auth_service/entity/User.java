@@ -1,4 +1,4 @@
-package unnkk.elsechat.auth_service.entities;
+package unnkk.elsechat.auth_service.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

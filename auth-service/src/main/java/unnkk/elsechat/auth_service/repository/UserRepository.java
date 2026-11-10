@@ -1,7 +1,7 @@
-package unnkk.elsechat.auth_service.repositories;
+package unnkk.elsechat.auth_service.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import unnkk.elsechat.auth_service.entities.User;
+import unnkk.elsechat.auth_service.entity.User;
 
 import java.util.Optional;
 
