@@ -1,0 +1,12 @@
+package unnkk.elsechat.auth.controller;
+
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/api/auth")
+public class HealthController {
+    @GetMapping("/ping")
+    public String ping(){
+        return "pong";
+    }
+}

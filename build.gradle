@@ -6,7 +6,7 @@ plugins {
 
 allprojects {
     group = 'unnkk.elsechat'
-    version = '0.0.1-SNAPSHOT'
+    version = '0.2-SNAPSHOT'
 
     repositories {
         mavenCentral()
@@ -27,6 +27,14 @@ subprojects {
     configurations {
         compileOnly {
             extendsFrom annotationProcessor
+        }
+    }
+
+    configurations.configureEach {
+        resolutionStrategy {
+            force 'org.testcontainers:testcontainers:1.19.8'
+            force 'org.testcontainers:junit-jupiter:1.19.8'
+            force 'org.testcontainers:postgresql:1.19.8'
         }
     }
 
