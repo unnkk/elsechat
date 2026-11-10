@@ -1,8 +1,8 @@
 
-/auth-service/build/
+/auth/build/
 /build/
 /.gradle/
-/gateway-service/build/
-/post-service/build/
-/user-service/build/
+/gateway/build/
+/post/build/
+/user/build/
 /.idea/

@@ -30,6 +30,14 @@ subprojects {
         }
     }
 
+    configurations.configureEach {
+        resolutionStrategy {
+            force 'org.testcontainers:testcontainers:1.19.8'
+            force 'org.testcontainers:junit-jupiter:1.19.8'
+            force 'org.testcontainers:postgresql:1.19.8'
+        }
+    }
+
     dependencies {
         compileOnly 'org.projectlombok:lombok'
         annotationProcessor 'org.projectlombok:lombok'
