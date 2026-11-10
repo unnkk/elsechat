@@ -4,12 +4,9 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.web.bind.annotation.*;
 import unnkk.elsechat.auth_service.dto.UserDTO;
-import unnkk.elsechat.auth_service.exception.UsernameAlreadyTakenException;
 import unnkk.elsechat.auth_service.service.AuthService;
 
 import java.util.Map;
@@ -52,5 +49,13 @@ public class AuthController {
                 .body(Map.of(
                         "token", token
                 ));
+    }
+
+    @GetMapping("/me")
+    public ResponseEntity<Map<String, String>> getCurrentUser(){
+        String username = SecurityContextHolder.getContext().getAuthentication().getName();
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(Map.of("username", username));
     }
 }
