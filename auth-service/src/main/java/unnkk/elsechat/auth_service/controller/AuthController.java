@@ -19,13 +19,7 @@ public class AuthController {
 
     @PostMapping("/register")
     public ResponseEntity<Map<String, String>> register(@Valid  @RequestBody UserDTO body){
-        String token;
-        try {
-            token = authService.register(body);
-        } catch (UsernameAlreadyTakenException e) {
-            return ResponseEntity.status(HttpStatus.CONFLICT)
-                    .body(Map.of("error", e.getMessage()));
-        }
+        String token = authService.register(body);
 
         return ResponseEntity
                 .status(HttpStatus.CREATED)
@@ -36,13 +30,7 @@ public class AuthController {
 
     @PostMapping("/login")
     public ResponseEntity<Map<String, String>> login(@Valid  @RequestBody UserDTO body){
-        String token;
-        try {
-            token = authService.login(body);
-        } catch (Exception e){
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
-                    .body(Map.of("error", e.getMessage()));
-        }
+        String token = authService.login(body);
 
         return ResponseEntity
                 .status(HttpStatus.OK)
