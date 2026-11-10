@@ -8,9 +8,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import unnkk.elsechat.auth_service.dto.AuthRequest;
+import unnkk.elsechat.auth_service.dto.UserDTO;
 import unnkk.elsechat.auth_service.exception.UsernameAlreadyTakenException;
 import unnkk.elsechat.auth_service.service.AuthService;
+
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/auth")
@@ -19,16 +21,36 @@ public class AuthController {
     private final AuthService authService;
 
     @PostMapping("/register")
-    public ResponseEntity<String> register(@Valid  @RequestBody AuthRequest body){
-        long id;
+    public ResponseEntity<Map<String, String>> register(@Valid  @RequestBody UserDTO body){
+        String token;
         try {
-            id = authService.register(body);
+            token = authService.register(body);
         } catch (UsernameAlreadyTakenException e) {
-            return new ResponseEntity<>(HttpStatus.CONFLICT);
+            return ResponseEntity.status(HttpStatus.CONFLICT)
+                    .body(Map.of("error", e.getMessage()));
         }
 
         return ResponseEntity
                 .status(HttpStatus.CREATED)
-                .body(String.valueOf(id));
+                .body(Map.of(
+                        "token", token
+                ));
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<Map<String, String>> login(@Valid  @RequestBody UserDTO body){
+        String token;
+        try {
+            token = authService.login(body);
+        } catch (Exception e){
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
+                    .body(Map.of("error", e.getMessage()));
+        }
+
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(Map.of(
+                        "token", token
+                ));
     }
 }
