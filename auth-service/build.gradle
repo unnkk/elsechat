@@ -6,6 +6,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-webmvc'
 
 	runtimeOnly 'org.postgresql:postgresql'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-security-test'
 	testImplementation 'org.springframework.boot:spring-boot-starter-webmvc-test'
